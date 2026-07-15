@@ -235,8 +235,11 @@
 }
 
 .cta-card {
+  width: 100%;
+  max-width: 100%;
   text-align: center;
   padding: 70px;
+  border-radius: 24px;
 
   h2 {
     margin-bottom: 20px;
