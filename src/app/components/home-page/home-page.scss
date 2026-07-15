@@ -1,0 +1,631 @@
+/*=========================================
+ Hero Section
+=========================================*/
+
+.hero {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  background: var(--color-bg);
+
+  .hero-wrapper {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 80px;
+    align-items: center;
+  }
+}
+
+/*=========================================
+ Left Content
+=========================================*/
+
+.hero-content {
+
+  .hero-badge {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: var(--color-accent);
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+    max-width: 650px;
+  }
+
+  p {
+    max-width: 620px;
+    margin-bottom: 40px;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/*=========================================
+ Schedule Card
+=========================================*/
+
+.hero-card {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  h3 {
+    margin: 0;
+    font-size: 1.35rem;
+  }
+
+  i {
+    color: var(--color-primary);
+    font-size: 20px;
+  }
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid var(--color-border);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  span {
+    font-weight: 700;
+    color: var(--color-heading);
+  }
+
+  p {
+    margin: 0;
+    color: var(--color-text);
+  }
+}
+
+/*=========================================
+ Statistics
+=========================================*/
+
+.stats {
+  padding: 70px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+
+  text-align: center;
+
+  border: 1px solid var(--color-border);
+
+  transition: .3s;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+  }
+
+  h2 {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 600;
+  }
+}
+
+/*=========================================
+ About Section
+=========================================*/
+
+.about {
+  padding: 100px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  align-items: center;
+}
+
+.about-image {
+
+  img {
+    width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+/*=========================================
+ Features
+=========================================*/
+
+.features {
+  padding: 100px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+
+  h2 {
+    margin-top: 16px;
+  }
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.feature-grid .card {
+  text-align: center;
+  transition: .3s;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  i {
+    font-size: 42px;
+    color: var(--color-primary);
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    margin-bottom: 16px;
+  }
+}
+
+/*=========================================
+ CTA
+=========================================*/
+
+.cta {
+  padding-bottom: 100px;
+}
+
+.cta-card {
+  text-align: center;
+  padding: 70px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    max-width: 650px;
+    margin: auto auto 35px;
+  }
+}
+
+/*=========================================
+ Responsive
+=========================================*/
+
+@media (max-width: 1200px) {
+
+  .feature-grid,
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .hero {
+    padding: 80px 0;
+    min-height: auto;
+
+    .hero-wrapper {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .feature-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  .cta-card {
+    padding: 40px 25px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .schedule-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+}
+
+/*==============================
+ Academic Section
+===============================*/
+
+.academic-section {
+    padding: 100px 0;
+    background: var(--color-surface-light);
+}
+
+.academic-grid {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.resource-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 30px;
+
+    i {
+        font-size: 24px;
+        color: var(--color-primary);
+    }
+
+    h3 {
+        margin: 0;
+    }
+}
+
+/*==============================
+ Events
+===============================*/
+
+.event-item {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.event-date {
+
+    width: 65px;
+    height: 65px;
+
+    border-radius: 14px;
+
+    background: var(--color-primary);
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    small {
+        font-size: 11px;
+    }
+}
+
+.event-info {
+
+    h4 {
+        margin-bottom: 6px;
+        font-size: 17px;
+    }
+
+    p {
+        margin: 0;
+        color: var(--color-muted);
+        font-size: 14px;
+    }
+}
+
+/*==============================
+ Downloads
+===============================*/
+
+.download-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 18px;
+
+    margin-bottom: 14px;
+
+    border-radius: 12px;
+
+    background: white;
+
+    transition: .3s;
+
+    &:hover {
+
+        background: var(--color-primary);
+
+        color: white;
+
+        transform: translateX(6px);
+    }
+}
+
+/*==============================
+ Holiday
+===============================*/
+
+.holiday-item {
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid var(--color-border);
+
+    &:last-child {
+        border: none;
+    }
+
+    span {
+        color: var(--color-primary);
+        font-weight: 700;
+    }
+
+    strong {
+        color: var(--color-heading);
+        font-weight: 600;
+    }
+}
+
+/*==============================
+ Responsive
+===============================*/
+
+@media (max-width: 992px) {
+
+    .academic-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.achievement-grid,
+.award-grid,
+.testimonial-grid {
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.gallery-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+}
+
+.gallery-grid img{
+
+    width:100%;
+    height:260px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.4s;
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:var(--shadow-lg);
+}
+
+.student-card,
+.testimonial-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-md);
+
+    transition:.3s;
+}
+
+.student-card:hover,
+.testimonial-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.student-card img,
+.testimonial-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+}
+
+.student-content{
+
+    padding:25px;
+}
+
+.student-badge{
+
+    margin-top:15px;
+
+    display:inline-block;
+
+    background:var(--color-primary);
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:14px;
+}
+
+.award-grid .card{
+
+    text-align:center;
+
+    padding:40px;
+}
+
+.award-grid i{
+
+    font-size:48px;
+
+    color:var(--color-primary);
+
+    margin-bottom:20px;
+}
+
+.testimonial-card{
+
+    padding:30px;
+}
+
+.testimonial-card img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    margin-bottom:20px;
+}
+
+.testimonial-card p{
+
+    margin:20px 0;
+}
+
+@media(max-width:992px){
+
+.gallery-grid,
+.achievement-grid,
+.award-grid,
+.testimonial-grid{
+
+grid-template-columns:1fr;
+}
+
+}

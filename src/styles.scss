@@ -1,0 +1,363 @@
+/* You can add global styles to this file, and also import other style files */
+/*==========================================
+  NICE HI TECH SCHOOL
+  Global Styles
+==========================================*/
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/*==========================================
+  Variables
+==========================================*/
+
+:root {
+  /* Brand */
+  --color-primary: #3f6d79;
+  --color-primary-dark: #345e69;
+  --color-primary-light: #dcecef;
+
+  --color-secondary: #eef5f3;
+
+  --color-accent: #a96a1d;
+  --color-accent-light: #d69a4a;
+
+  /* Background */
+
+  --color-bg: #f8f5ee;
+  --color-surface: #ffffff;
+  --color-surface-light: #f4f1ea;
+
+  /* Text */
+
+  --color-heading: #16232f;
+  --color-text: #55606d;
+  --color-muted: #7c8794;
+
+  /* Border */
+
+  --color-border: #e6e8eb;
+
+  /* Status */
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* Radius */
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-round: 999px;
+
+  /* Shadows */
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, .05);
+
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, .08);
+
+  --shadow-lg: 0 18px 45px rgba(0, 0, 0, .12);
+
+  /* Transition */
+
+  --transition: .25s ease;
+}
+
+/*==========================================
+  Reset
+==========================================*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*==========================================
+  Layout
+==========================================*/
+
+.container {
+  width: min(1280px, 92%);
+  margin-inline: auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+/*==========================================
+ Typography
+==========================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  color: var(--color-text);
+}
+
+/*==========================================
+  Buttons
+==========================================*/
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+
+  padding: .9rem 1.6rem;
+
+  border-radius: 14px;
+
+  transition: var(--transition);
+
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  box-shadow: var(--shadow-sm);
+
+  &:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-secondary {
+  background: var(--color-secondary);
+  color: var(--color-heading);
+
+  &:hover {
+    background: white;
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+/*==========================================
+  Cards
+==========================================*/
+
+.card {
+  background: white;
+  border-radius: 22px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  padding: 2rem;
+}
+
+/*==========================================
+ Navigation
+==========================================*/
+
+.navbar {
+  height: 72px;
+  background: white;
+  border-bottom: 1px solid var(--color-border);
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  backdrop-filter: blur(20px);
+}
+
+.nav-link {
+  position: relative;
+  color: var(--color-heading);
+  font-weight: 600;
+  transition: .3s;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transition: .3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+/*==========================================
+  Badge
+==========================================*/
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+
+  color: var(--color-accent);
+
+  font-size: .85rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: .12em;
+}
+
+/*==========================================
+ Forms
+==========================================*/
+
+.form-control {
+  width: 100%;
+  padding: .9rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: white;
+  transition: .25s;
+
+  &:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(63, 109, 121, .12);
+    outline: none;
+  }
+}
+
+/*==========================================
+ Utilities
+==========================================*/
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.bg-white {
+  background: white;
+}
+
+.rounded {
+  border-radius: 18px;
+}
+
+.shadow {
+  box-shadow: var(--shadow-md);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mt-1 { margin-top: .5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: .5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+/*==========================================
+ Scrollbar
+==========================================*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+/*==========================================
+ Selection
+==========================================*/
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+}

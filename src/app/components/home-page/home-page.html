@@ -1,0 +1,409 @@
+<app-header></app-header>
+
+<!-- 1. Hero Section (First Impression & Daily Schedule) -->
+<section class="hero">
+    <div class="container hero-wrapper">
+        <!-- Left -->
+        <div class="hero-content">
+            <span class="hero-badge">
+                PUBLIC SCHOOL • ODISHA • EST. 2025
+            </span>
+            <h1>
+                Nice Hi Tech <br>
+                Public School
+            </h1>
+            <p>
+                A modern educational institution focused on academic excellence,
+                innovation, sports, and holistic student development. Admissions
+                are now open for the new academic session.
+            </p>
+            <div class="hero-buttons">
+                <a routerLink="/admission" class="btn btn-primary">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Admissions
+                </a>
+                <a routerLink="/contact" class="btn btn-secondary">
+                    <i class="fa-solid fa-location-dot"></i>
+                    View Campus
+                </a>
+            </div>
+        </div>
+
+        <!-- Right -->
+        <div class="hero-card">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Today's Schedule</h3>
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="schedule">
+                    <div class="schedule-item">
+                        <span>09:00 AM</span>
+                        <p>Morning Assembly</p>
+                    </div>
+                    <div class="schedule-item">
+                        <span>09:30 AM</span>
+                        <p>Classes Begin</p>
+                    </div>
+                    <div class="schedule-item">
+                        <span>11:30 AM</span>
+                        <p>Science Lab Practical</p>
+                    </div>
+                    <div class="schedule-item">
+                        <span>02:00 PM</span>
+                        <p>Sports Practice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. About Section (Who We Are) -->
+<section class="about">
+    <div class="container about-grid">
+        <div>
+            <span class="badge">ABOUT OUR SCHOOL</span>
+            <h2>Learning Today, Leading Tomorrow</h2>
+            <p>
+                Nice Hi Tech Public School provides quality education with modern
+                classrooms, experienced faculty, digital learning, extracurricular
+                activities, and a safe environment that helps every child succeed.
+            </p>
+            <a routerLink="/about" class="btn btn-primary">
+                Learn More
+            </a>
+        </div>
+        <div class="about-image">
+            <img src="assets/images/school.jpg" alt="School">
+        </div>
+    </div>
+</section>
+
+<!-- 3. Features Section (What We Offer / Infrastructure) -->
+<section class="features">
+    <div class="container">
+        <div class="section-title">
+            <span class="badge">WHY CHOOSE US</span>
+            <h2>Our Facilities</h2>
+        </div>
+        <div class="feature-grid">
+            <div class="card">
+                <i class="fa-solid fa-school"></i>
+                <h3>Smart Classrooms</h3>
+                <p>Interactive digital classrooms with modern technology.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-flask"></i>
+                <h3>Science Labs</h3>
+                <p>Well-equipped Physics, Chemistry and Biology laboratories.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>Library</h3>
+                <p>Thousands of books and digital learning resources.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-futbol"></i>
+                <h3>Sports</h3>
+                <p>Indoor & outdoor sports facilities for all students.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 4. Statistics Section (Credibility in Numbers) -->
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h2>1200+</h2>
+                <p>Students</p>
+            </div>
+            <div class="stat-card">
+                <h2>75+</h2>
+                <p>Teachers</p>
+            </div>
+            <div class="stat-card">
+                <h2>98%</h2>
+                <p>Board Results</p>
+            </div>
+            <div class="stat-card">
+                <h2>20+</h2>
+                <p>Sports & Clubs</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. Academic Resources & Updates (Operations & Planning) -->
+<section class="academic-section">
+    <div class="container">
+        <div class="section-title">
+            <span class="badge">Academics & Updates</span>
+            <h2>Stay Updated</h2>
+            <p>
+                Explore upcoming events, download class timetables,
+                and view the academic holiday calendar.
+            </p>
+        </div>
+        <div class="academic-grid">
+            <!-- Upcoming Events -->
+            <div class="card resource-card">
+                <div class="card-title">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h3>Upcoming Events</h3>
+                </div>
+                <div class="event-list">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>15</span>
+                            <small>AUG</small>
+                        </div>
+                        <div class="event-info">
+                            <h4>Independence Day Celebration</h4>
+                            <p>School Campus • 9:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>22</span>
+                            <small>AUG</small>
+                        </div>
+                        <div class="event-info">
+                            <h4>Science Exhibition</h4>
+                            <p>Main Auditorium</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span>05</span>
+                            <small>SEP</small>
+                        </div>
+                        <div class="event-info">
+                            <h4>Teachers' Day</h4>
+                            <p>Cultural Program</p>
+                        </div>
+                    </div>
+                </div>
+                <a routerLink="/events" class="btn btn-primary">
+                    View All Events
+                </a>
+            </div>
+
+            <!-- Timetable -->
+            <div class="card resource-card">
+                <div class="card-title">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <h3>Download Timetable</h3>
+                </div>
+                <div class="download-list">
+                    <a href="#" class="download-item">
+                        Class I
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                    <a href="#" class="download-item">
+                        Class II
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                    <a href="#" class="download-item">
+                        Class III
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                    <a href="#" class="download-item">
+                        Class IV
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                    <a routerLink="/timetable" class="btn btn-secondary">
+                        View All Timetables
+                    </a>
+                </div>
+            </div>
+
+            <!-- Holiday List -->
+            <div class="card resource-card">
+                <div class="card-title">
+                    <i class="fa-solid fa-umbrella-beach"></i>
+                    <h3>Holiday List</h3>
+                </div>
+                <div class="holiday-list">
+                    <div class="holiday-item">
+                        <span>15 Aug</span>
+                        <strong>Independence Day</strong>
+                    </div>
+                    <div class="holiday-item">
+                        <span>27 Aug</span>
+                        <strong>Ganesh Chaturthi</strong>
+                    </div>
+                    <div class="holiday-item">
+                        <span>02 Oct</span>
+                        <strong>Gandhi Jayanti</strong>
+                    </div>
+                    <div class="holiday-item">
+                        <span>24 Oct</span>
+                        <strong>Diwali</strong>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">
+                    Download Holiday List
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 6. Achievements Section (Student Excellence) -->
+<section class="achievements">
+    <div class="container">
+        <div class="section-title">
+            <span class="badge">Student Excellence</span>
+            <h2>Top Performing Students</h2>
+            <p>Celebrating our students' academic excellence and achievements.</p>
+        </div>
+        <div class="achievement-grid">
+            <div class="student-card">
+                <img src="assets/images/students/student1.jpg">
+                <div class="student-content">
+                    <h3>Ananya Das</h3>
+                    <span>Class X</span>
+                    <p>98.6% Board Examination</p>
+                    <div class="student-badge">
+                        School Topper
+                    </div>
+                </div>
+            </div>
+            <div class="student-card">
+                <img src="assets/images/students/student2.jpg">
+                <div class="student-content">
+                    <h3>Rahul Kumar</h3>
+                    <span>Class XII</span>
+                    <p>National Science Olympiad Gold Medal</p>
+                    <div class="student-badge">
+                        Gold Medal
+                    </div>
+                </div>
+            </div>
+            <div class="student-card">
+                <img src="assets/images/students/student3.jpg">
+                <div class="student-content">
+                    <h3>Priya Sahu</h3>
+                    <span>Class IX</span>
+                    <p>State Chess Champion</p>
+                    <div class="student-badge">
+                        Sports Champion
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 7. Awards Section (Institutional Validation) -->
+<section class="awards">
+    <div class="container">
+        <div class="section-title">
+            <span class="badge">Achievements</span>
+            <h2>Awards & Certifications</h2>
+        </div>
+        <div class="award-grid">
+            <div class="card">
+                <i class="fa-solid fa-award"></i>
+                <h3>Best CBSE School</h3>
+                <p>Recognized for academic excellence.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-medal"></i>
+                <h3>Sports Excellence</h3>
+                <p>District level sports champions.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-certificate"></i>
+                <h3>ISO Certified Campus</h3>
+                <p>Safe and quality education standards.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-trophy"></i>
+                <h3>100% Board Result</h3>
+                <p>Outstanding student performance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 8. Gallery Section (Visual Experience) -->
+<section class="gallery">
+    <div class="container">
+        <div class="section-title">
+            <span class="badge">Gallery</span>
+            <h2>Life at Nice Hi Tech Public School</h2>
+        </div>
+        <div class="gallery-grid">
+            <img src="assets/images/gallery/classroom.jpg">
+            <img src="assets/images/gallery/library.jpg">
+            <img src="assets/images/gallery/lab.jpg">
+            <img src="assets/images/gallery/sports.jpg">
+            <img src="assets/images/gallery/annual-day.jpg">
+            <img src="assets/images/gallery/campus.jpg">
+        </div>
+        <div class="text-center mt-4">
+            <a routerLink="/gallery" class="btn btn-primary">
+                View Complete Gallery
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 9. Testimonials Section (Social Proof) -->
+<section class="testimonials">
+    <div class="container">
+        <div class="section-title">
+            <span class="badge">Testimonials</span>
+            <h2>What Parents Say</h2>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <img src="assets/images/parents/parent1.jpg">
+                <h3>Mr. Rajesh Kumar</h3>
+                <span>Parent</span>
+                <p>
+                    "The teachers are supportive and my daughter enjoys learning every day. We have seen remarkable academic improvement."
+                </p>
+                ★★★★★
+            </div>
+            <div class="testimonial-card">
+                <img src="assets/images/students/student4.jpg">
+                <h3>Neha Patel</h3>
+                <span>Class IX Student</span>
+                <p>
+                    "Our school provides excellent facilities, smart classrooms, sports activities and caring teachers."
+                </p>
+                ★★★★★
+            </div>
+            <div class="testimonial-card">
+                <img src="assets/images/parents/parent2.jpg">
+                <h3>Mrs. Sunita Das</h3>
+                <span>Parent</span>
+                <p>
+                    "The school focuses on academics as well as character development. We highly recommend this school."
+                </p>
+                ★★★★★
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 10. Call to Action (The Final Conversion Step) -->
+<section class="cta">
+    <div class="container">
+        <div class="card cta-card">
+            <h2>Admissions Open for 2026–2027</h2>
+            <p>
+                Secure your child's future with quality education and
+                world-class facilities.
+            </p>
+            <a routerLink="/admission" class="btn btn-primary">
+                Apply Now
+            </a>
+        </div>
+    </div>
+</section>
